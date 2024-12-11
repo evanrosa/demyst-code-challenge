@@ -1,8 +1,8 @@
-# Data Engineering Coding Challenges Demyst 
+# Data Engineering Coding Challenge Demyst 
 
 ---
 
-##### The purpose of this repo is to provide solutions to coding challenges provided by Demyst.
+##### The purpose of this repo is to provide solutions to problem 1 of the coding challenge provided by Demyst.
 
 
 ### Prerequisites
@@ -22,14 +22,14 @@
 2. **Build and Run the Program with Docker**:
    Ensure Docker is installed and running, then build and run the application:
    ```bash
-   docker-compose build
-   docker-compose up
+   docker compose build
+   docker compose up
    ```
 
 3. **Running Tests** (Optional):
    To run tests, use the following command:
    ```bash
-   docker-compose run test
+   docker compose run test
    ```
 
 4**Deactivate the Virtual Environment**:
