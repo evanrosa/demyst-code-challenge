@@ -7,12 +7,11 @@
 
 ### Prerequisites
 
-- Python 3.10+
-- `pip` for dependency installation
-- Docker (ensure it's installed and running)
+- **Docker**: Ensure Docker is installed and running on your system. You can use local but for ease of use it's highly recommended that you use Docker.
 
 ### Setup
 
+#### **Option 1: Running with Docker (Recommended)**
 1. **Clone the Repository**:
    ```bash
    git clone <repository-url>
@@ -31,9 +30,16 @@
    ```bash
    docker compose run test
    ```
-
-4**Deactivate the Virtual Environment**:
-   When you're done, deactivate the virtual environment:
+   
+#### **Option 2: Running on Local (NOT Recommended)**
+1. **If you want to run on local w/o Docker you will need to setup a virtual env with Python 3.10.**
+2. **Clone the Repository**:
    ```bash
-   deactivate
-   ```
+   git clone <repository-url>
+   cd <repository-directory>
+   ```**
+3. **python -m venv venv** source venv/bin/activate on macOS/Linux
+4. **pip install -r requirements.txt** 
+5. **Run the program with - python main.py**
+6. **Run tests - pytest --maxfail=5 --disable-warnings**
+7. **deactivate** This will deactivate the virtual env
