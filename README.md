@@ -5,30 +5,35 @@
 ##### The purpose of this repo is to provide solutions to coding challenges provided by Demyst.
 
 
+### Prerequisites
+
+- Python 3.10+
+- `pip` for dependency installation
+- Docker (ensure it's installed and running)
+
 ### Setup
 
 1. **Clone the Repository**:
    ```bash
-   git clone repo
-   cd repo
+   git clone <repository-url>
+   cd <repository-directory>
    ```
 
-2. **Install Dependencies**:
+2. **Build and Run the Program with Docker**:
+   Ensure Docker is installed and running, then build and run the application:
    ```bash
-   pip install -r requirements.txt
+   docker-compose build
+   docker-compose up
    ```
 
-3. **Build and Run the Program with Docker**:
+3. **Running Tests** (Optional):
+   To run tests, use the following command:
    ```bash
-   docker compose build
-   docker compose up
+   docker-compose run test
    ```
 
-4. **Ensure Docker is Installed**:
-   Make sure Docker is installed and running on your machine. You can download it from [Docker's official website](https://www.docker.com/).
-
-5. **Running Tests** (Optional):
-   If you want to run tests, use the following command:
+4**Deactivate the Virtual Environment**:
+   When you're done, deactivate the virtual environment:
    ```bash
-   docker compose run test
+   deactivate
    ```
