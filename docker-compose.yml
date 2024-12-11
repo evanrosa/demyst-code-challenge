@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    container_name: app_container
+    volumes:
+      - .:/app  # Mount your code for live updates
+    ports:
+      - "8000:8000"  # Expose ports if needed
+    command: python main.py  # Default command to run the app
+
+  test:
+    build:
+      context: .
+    container_name: test_container
+    volumes:
+      - .:/app  # Mount your code for live updates
+    command: pytest --maxfail=5 --disable-warnings  # Command to run tests
